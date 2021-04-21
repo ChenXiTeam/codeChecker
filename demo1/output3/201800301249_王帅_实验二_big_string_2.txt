@@ -1,0 +1,1 @@
+#include"myFunctions.cpp"intfindMaxElement1D(intx[],intn);intfindMaxElement2D(intx[][5],intr);voidsort1D(intx[],intn);

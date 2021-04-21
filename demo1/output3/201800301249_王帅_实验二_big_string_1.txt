@@ -1,0 +1,1 @@
+intfindMaxElement1D(intx[],intn){intmax=x[0];for(inti=1;i<n;i++){if(x[i]>max)max=x[i];}returnmax;}intfindMaxElement2D(intx[][5],intr){intmax=x[0][0];for(intm=0;m<r;m++){for(intn=0;n<5;n++){if(x[m][n]>max)max=x[m][n];}}returnmax;}voidsort1D(intx[],intn){for(intj=0;j<n-1;j++){bools=true;for(inti=0;i<n-1-j;i++){if(x[i]>x[i+1]){s=false;intt=x[i];x[i]=x[i+1];x[i+1]=t;}}if(s)break;}}

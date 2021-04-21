@@ -1,0 +1,1 @@
+#include<iostream>usingnamespacestd;intmain(){intn;cout<<"请输入的数组元素个数n"<<"";cin>>n;int*p=newint[n];cout<<"请输入数组的"<<n<<"个元素："<<endl;for(intt=0;t<n;t++){cin>>*p++;}cout<<endl;for(intt=0;t<n;t++){*p--;}cout<<"输出数组所有元素的值："<<endl;for(intt=0;t<n;t++){cout<<*p++<<"";}}

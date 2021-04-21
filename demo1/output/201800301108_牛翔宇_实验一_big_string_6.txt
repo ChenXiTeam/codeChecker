@@ -1,0 +1,1 @@
+#include<iostream>usingnamespacestd;template<typenameT>Tsum(Ta,Tb,Tc){returna+b+c;}intmain(){cout<<sum(1,2,3)<<"\n";cout<<sum(1.0,2.0,3.0)<<"\n";cout<<sum(1.5f,2.5f,3.5f);return0;}

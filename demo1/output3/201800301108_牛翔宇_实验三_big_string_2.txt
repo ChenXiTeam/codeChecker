@@ -1,0 +1,1 @@
+#include<iostream>usingnamespacestd;intmain(){intn;int*p;cout<<"输入n："<<endl;cin>>n;p=newint[n];cout<<"输入n个数组元素："<<endl;for(inti=0;i<n;i++){cin>>p[i];}for(inti=0;i<n;i++){cout<<p[i]<<"\t";}if(p){delete[]p;p=NULL;}return0;}

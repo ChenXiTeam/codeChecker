@@ -1,0 +1,217 @@
+山东大学 软件 学院 c++程序设计 课程实验报告 学号：201800301249实验题目：实验一实验学时：4实验目的：
+熟悉c++的表达式、运算符、简单程序设计
+熟悉c++的函数，包括函数调用、函数递归硬件环境： 
+
+PC机
+软件环境：
+
+DEV C++
+实验步骤与内容：
+
+实验一第一题代码：
+--begin--cpp--code--
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	double a1,a2,a3,a4,a5,a6,a7,a8;
+	
+	a1=3.5*3+2*7-'a';
+	
+	a2=26/3+34%3+2.5;
+	
+	a3=45/2+(int)3.14159/2;
+	
+	int a=3,b,c; 
+	a4=a=b=(c=a+=6); 
+	
+	a=3*5,a=b=3*2,a5=a;
+	
+	a=3;
+	a6=(int)(a+6.5)%2+(a=b=5);
+	
+	double x=2.5,y=4.7;
+	a=7;
+	a7=x+a%3*(int)(x+y) % 2 / 4;
+	
+    a=2,b=3,x=3.5,y=2.5;
+	a8=(float)(a+b)/2+(int)x%(int)y;
+	
+	cout<<a1<<"\n"<<a2<<"\n"<<a3<<"\n"<<a4<<"\n"<<a5<<"\n"<<a6<<"\n"<<a7<<"\n"<<a8; 
+	return 0;
+}
+--end--cpp--code--
+
+输出结果如下：
+
+
+实验一第二题代码：
+--begin--cpp--code--
+
+#include <iostream>
+using namespace std;
+
+int transform(char x)  //字母转化方法
+{
+    x=x+4;
+    return x;
+}
+
+int main()
+{
+	char c1,c2,c3,c4,c5,d1,d2,d3,d4,d5;
+	
+	cin>>c1>>c2>>c3>>c4>>c5;
+	
+	d1=transform(c1);
+	d2=transform(c2);
+	d3=transform(c3);
+	d4=transform(c4);
+	d5=transform(c5);
+	
+	cout<<d1<<d2<<d3<<d4<<d5;
+	
+	return 0;
+}	 
+--end--cpp--code--
+
+
+输入China，输出结果如下：
+
+
+实验一第三题代码：
+--begin--cpp--code--
+
+#include <iostream>
+using namespace std;
+
+double iteration(double x,double a)   
+{
+	double y;
+	y=0.5*(x+a/x);
+	return y;
+}
+
+int main()
+{
+	double x=1.0,a,x1,c;
+	cin>>a;
+	if(a<0)
+	{
+	  cout<<"不能输入负数！";
+	  return 0;
+    }
+    
+    x1=iteration(x,a);
+    c=x1-x;
+	while(c<=-0.00001||c>=0.00001)
+	{
+	  x=x1;
+	  x1=iteration(x1,a);
+	  c=x1-x;
+    }
+    
+	cout<<x1;
+	return 0;
+}
+--end--cpp--code--
+
+输出结果如下：
+
+输入3，输出平方根为1.73205.
+
+实验二第一题代码：
+--begin--cpp--code--
+
+#include <iostream>
+using namespace std;
+
+double count(double n,double x)
+{
+	double a;
+	if(n==0)  return 1;
+    if(n==1)  return x;
+    if(n>1)
+	{
+	   a=((2*n-1)*x*count((n-1),x)-(n-1)*count((n-2),x))/n;  //递归
+	   return a;
+	} 
+}
+
+int main()
+{
+	double n,x,a;
+	cout<<"请输入n的值：";
+	cin>> n;
+	cout<<"请输入x的值：";
+	cin>> x;
+	
+	a=count(n,x);
+	cout<<"勒让德多项式的值为:"<<a;
+}
+ --end--cpp--code--
+
+输出结果如下：
+
+n=x=5时，勒让德多项式的值为23525.
+
+实验二第二题代码：
+--begin--cpp--code--
+
+#include <iostream>
+using namespace std;
+
+int sum(int a,int b,int c)
+{
+	return a+b+c;
+}
+
+float sum(float a,float b,float c)
+{
+	return a+b+c;
+}
+
+double sum(double a,double b,double c)
+{
+	return a+b+c;
+}
+
+int main()
+{
+	cout<<"1+2+3="<<sum(1,2,3)<<endl;
+	cout<<"1.5+2.5+3.5="<<sum(1.5,2.5,3.5)<<endl;
+	cout<<"f1.2+f2.2+f3.2="<<sum((float)1.2,(float)2.2,(float)3.2)<<endl;
+	return 0;
+}
+--end--cpp--code--
+
+输出结果如下：
+
+
+实验二第三题代码：
+--begin--cpp--code--
+
+#include <iostream>
+using namespace std;
+template <typename T>
+
+T sum(T a,T b,T c)
+{
+	return a+b+c;
+}
+
+int main()
+{
+	cout<<"1+2+3="<<sum(1,2,3)<<endl;
+	cout<<"1.5+2.5+3.5="<<sum(1.5,2.5,3.5)<<endl;
+	cout<<"f1.2+f2.2+f3.2="<<sum((float)1.2,(float)2.2,(float)3.2)<<endl;
+	return 0;
+}
+--end--cpp--code--
+
+输出结果如下：
+
+结论分析与体会：
+    通过本次c++实验，掌握了一些c++程序设计的基本操作，对这种编程语言有了一个大致的了解。相比java，c++更为灵活，需要投入大量的时间与精力去学习。

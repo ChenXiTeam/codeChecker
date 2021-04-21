@@ -1,0 +1,1 @@
+#include<iostream>usingnamespacestd;voidcopy(char*p,char*q,intm){p=p+m-1;while(*p!='\0'){*q++=*p++;}*q!='\0';}intmain(){chara[30],b[30],*p,*q;intm;cout<<"请输入一个长度小于30的字符串：";cin>>a;cout<<"请输入m的值:";cin>>m;p=a;q=b;copy(p,q,m);cout<<b;return0;}

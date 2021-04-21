@@ -1,0 +1,1 @@
+#include<iostream>usingnamespacestd;doublelp(doublex,intn){doublep=0;if(n<0){cout<<"ERROR!";return0;}if(n==0)p=1;if(n==1)p=x;if(n>1){p=((2*n-1)*x*lp(x,n-1)-(n-1)*lp(x,n-2))/n;}returnp;}intmain(){cout<<lp(9,2);return0;}

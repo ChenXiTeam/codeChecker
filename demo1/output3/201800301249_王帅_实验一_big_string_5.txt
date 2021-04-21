@@ -1,0 +1,1 @@
+#include<iostream>usingnamespacestd;intsum(inta,intb,intc){returna+b+c;}floatsum(floata,floatb,floatc){returna+b+c;}doublesum(doublea,doubleb,doublec){returna+b+c;}intmain(){cout<<"1+2+3="<<sum(1,2,3)<<endl;cout<<"1.5+2.5+3.5="<<sum(1.5,2.5,3.5)<<endl;cout<<"f1.2+f2.2+f3.2="<<sum((float)1.2,(float)2.2,(float)3.2)<<endl;return0;}

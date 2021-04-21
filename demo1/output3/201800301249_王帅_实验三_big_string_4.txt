@@ -1,0 +1,1 @@
+#include<iostream>usingnamespacestd;classTime{private:inthour;intminute;intsec;public:voidset_time(void){cin>>hour;cin>>minute;cin>>sec;}voidshow_time(void){cout<<hour<<":"<<minute<<":"<<sec<<endl;}};Timet;intmain(){t.set_time();t.show_time();return0;}

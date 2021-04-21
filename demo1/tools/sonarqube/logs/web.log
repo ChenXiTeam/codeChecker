@@ -1,0 +1,94 @@
+2021.04.17 14:34:36 INFO  web[][o.s.p.ProcessEntryPoint] Starting web
+2021.04.17 14:34:36 INFO  web[][o.a.t.u.n.NioSelectorPool] Using a shared selector for servlet write/read
+2021.04.17 14:34:37 INFO  web[][o.s.s.e.EsClientProvider] Connected to local Elasticsearch: [http://127.0.0.1:9001]
+2021.04.17 14:34:37 INFO  web[][o.s.s.p.LogServerVersion] SonarQube Server / 8.7.1.42226 / bb9cf2bea57608dacfbab18185f1476371a2e0f8
+2021.04.17 14:34:39 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Starting embedded database on port 9092 with url jdbc:h2:tcp://127.0.0.1:9092/sonar
+2021.04.17 14:34:39 INFO  web[][o.s.s.p.d.EmbeddedDatabase] Embedded database started. Data stored in: F:\python_codes\codeChecker\demo1\tools\sonarqube\data
+2021.04.17 14:34:39 INFO  web[][o.sonar.db.Database] Create JDBC data source for jdbc:h2:tcp://127.0.0.1:9092/sonar
+2021.04.17 14:34:39 WARN  web[][o.s.db.dialect.H2] H2 database should be used for evaluation purpose only.
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerFileSystemImpl] SonarQube home: F:\python_codes\codeChecker\demo1\tools\sonarqube
+2021.04.17 14:34:40 INFO  web[][o.s.s.u.SystemPasscodeImpl] System authentication by passcode is disabled
+2021.04.17 14:34:40 INFO  web[][o.s.c.p.PluginInfo] Plugin [l10nzh] defines 'l10nen' as base plugin. This metadata can be removed from manifest of l10n plugins since version 5.2.
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin C (Community) / 1.3.1.1807 / 21428260155e9662780ff609319a9846d3c485af
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin C# Code Quality and Security / 8.18.0.27296 / 9aa523cd53b79837cfb707e036b65deb12b334bd
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin C++ (Community) / 1.3.1.1807 / 21428260155e9662780ff609319a9846d3c485af
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin CSS Code Quality and Security / 1.3.2.1782 / e5e9afed0350d3a3f5a8d016565abd6af8a5ed96
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Chinese Pack / 8.7 / null
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Flex Code Quality and Security / 2.6.0.2294 / 64746e0c588ddd44f3216ae1ee02a01bcf6b2dac
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Go Code Quality and Security / 1.8.2.1946 / e5d905c22abff18761b80fa66a2d92c2aeb6dcf7
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin HTML Code Quality and Security / 3.3.0.2534 / 18c0ca03dae915ebe9bc9bd71345b3290db1d5a5
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin JaCoCo / 1.1.0.898 / f65b288e6c2888393bd7fb72ad7ac1425f88eebf
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Java Code Quality and Security / 6.12.0.24852 / be1719d9a06eab7d4d8903dc3264a5839c73e26a
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin JavaScript/TypeScript Code Quality and Security / 7.2.0.14938 / 8f58cd77d8fb0f0d31ab14a9e5762eea438d01ee
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Kotlin Code Quality and Security / 1.8.2.1946 / e5d905c22abff18761b80fa66a2d92c2aeb6dcf7
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin PHP Code Quality and Security / 3.15.0.7197 / d9ce5c6caa9e8e60e9100578ca035cbb5b1a2899
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Python Code Quality and Security / 3.2.0.7856 / d0e59d398e2f615bd40b8cd37d7685e5202fd980
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Ruby Code Quality and Security / 1.8.2.1946 / e5d905c22abff18761b80fa66a2d92c2aeb6dcf7
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin Scala Code Quality and Security / 1.8.2.1946 / e5d905c22abff18761b80fa66a2d92c2aeb6dcf7
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin SonarXML / 2.0.1.2020 / c5b84004face582d56f110e24c29bf9c6a679e69
+2021.04.17 14:34:40 INFO  web[][o.s.s.p.ServerPluginManager] Deploy plugin VB.NET Code Quality and Security / 8.18.0.27296 / 9aa523cd53b79837cfb707e036b65deb12b334bd
+2021.04.17 14:34:42 WARN  web[][o.a.c.u.SessionIdGeneratorBase] Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [161] milliseconds.
+2021.04.17 14:34:42 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceFilter@48597950 [pattern=UrlPattern{inclusions=[/api/system/migrate_db.*, ...], exclusions=[/api/components/update_key, ...]}]
+2021.04.17 14:34:42 INFO  web[][o.s.s.a.EmbeddedTomcat] HTTP connector enabled on port 9000
+2021.04.17 14:34:43 INFO  web[][o.s.s.p.UpdateCenterClient] Update center: https://update.sonarsource.org/update-center.properties (no proxy)
+2021.04.17 14:34:44 INFO  web[][o.s.s.s.LogServerId] Server ID: BF41A1F2-AXiISE72eEhPINSWKObR
+2021.04.17 14:34:44 WARN  web[][o.s.s.a.LogOAuthWarning] For security reasons, OAuth authentication should use HTTPS. You should set the property 'Administration > Configuration > Server base URL' to a HTTPS URL.
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/plugins/download
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/permissions/search_templates
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/list_bitbucketserver_projects
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/check_pat
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/list_azure_projects
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/search_bitbucketserver_repos
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/search_azure_repos
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/list_github_organizations
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/list_github_repositories
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_integrations/get_github_client_id
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_settings/get_binding
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_settings/list
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_settings/list_definitions
+2021.04.17 14:34:44 WARN  web[][o.s.a.s.w.WebService$Action] The response example is not set on action api/alm_settings/validate
+2021.04.17 14:34:44 INFO  web[][o.s.s.t.TelemetryDaemon] Sharing of SonarQube statistics is enabled.
+2021.04.17 14:34:44 INFO  web[][o.s.s.n.NotificationDaemon] Notification service started (delay 60 sec.)
+2021.04.17 14:34:44 INFO  web[][o.s.s.a.p.ExpiredSessionsCleaner] Purge of expired session tokens has removed 0 elements
+2021.04.17 14:34:44 INFO  web[][o.s.s.a.p.ExpiredSessionsCleaner] Purge of expired SAML message ids has removed 0 elements
+2021.04.17 14:34:44 INFO  web[][o.s.s.s.GeneratePluginIndex] Generate scanner plugin index
+2021.04.17 14:34:44 INFO  web[][o.s.s.s.RegisterPlugins] Register plugins
+2021.04.17 14:34:44 INFO  web[][o.s.s.s.RegisterMetrics] Register metrics
+2021.04.17 14:34:44 INFO  web[][o.s.s.r.RegisterRules] Register rules
+2021.04.17 14:34:52 INFO  web[][o.s.s.q.BuiltInQProfileRepositoryImpl] Load quality profiles
+2021.04.17 14:34:53 INFO  web[][o.s.s.q.RegisterQualityProfiles] Register quality profiles
+2021.04.17 14:34:53 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile css/Sonar way
+2021.04.17 14:34:53 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile c++/Sonar way
+2021.04.17 14:34:53 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile c/Sonar way
+2021.04.17 14:34:53 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile scala/Sonar way
+2021.04.17 14:34:53 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile jsp/Sonar way
+2021.04.17 14:34:53 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile kotlin/Sonar way
+2021.04.17 14:34:53 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile go/Sonar way
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile js/Sonar way
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile js/Sonar way Recommended
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile py/Sonar way
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile ruby/Sonar way
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile cs/Sonar way
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile java/Sonar way
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile web/Sonar way
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile xml/Sonar way
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile flex/Sonar way
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile php/Sonar way
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile php/PSR-2
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile php/Drupal
+2021.04.17 14:34:54 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile vbnet/Sonar way
+2021.04.17 14:34:55 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile ts/Sonar way
+2021.04.17 14:34:55 INFO  web[][o.s.s.q.RegisterQualityProfiles] Update profile ts/Sonar way recommended
+2021.04.17 14:34:55 INFO  web[][o.s.s.s.RegisterPermissionTemplates] Register permission templates
+2021.04.17 14:34:55 INFO  web[][o.s.s.s.RenameDeprecatedPropertyKeys] Rename deprecated property keys
+2021.04.17 14:34:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceFilter@74179a7c [pattern=UrlPattern{inclusions=[/api/issues/delete_comment.*, ...], exclusions=[/api/authentication/login.*, ...]}]
+2021.04.17 14:34:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.platform.web.WebServiceReroutingFilter@2adabe2e [pattern=UrlPattern{inclusions=[/api/components/bulk_update_key, ...], exclusions=[]}]
+2021.04.17 14:34:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.InitFilter@6adab778 [pattern=UrlPattern{inclusions=[/sessions/init/*], exclusions=[]}]
+2021.04.17 14:34:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.OAuth2CallbackFilter@8f4b922 [pattern=UrlPattern{inclusions=[/oauth2/callback/*], exclusions=[]}]
+2021.04.17 14:34:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ResetPasswordFilter@23518c15 [pattern=UrlPattern{inclusions=[/*], exclusions=[*.css, ...]}]
+2021.04.17 14:34:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LoginAction@54e2d279 [pattern=UrlPattern{inclusions=[/api/authentication/login], exclusions=[]}]
+2021.04.17 14:34:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.LogoutAction@1ab2e00f [pattern=UrlPattern{inclusions=[/api/authentication/logout], exclusions=[]}]
+2021.04.17 14:34:55 INFO  web[][o.s.s.p.w.MasterServletFilter] Initializing servlet filter org.sonar.server.authentication.ws.ValidateAction@6f688679 [pattern=UrlPattern{inclusions=[/api/authentication/validate], exclusions=[]}]
+2021.04.17 14:34:55 INFO  web[][o.s.s.q.ProjectsInWarningDaemon] Counting number of projects in warning is not started as there are no projects in this situation.
+2021.04.17 14:34:55 INFO  web[][o.s.s.p.p.PlatformLevelStartup] Running Community Edition
+2021.04.17 14:34:55 INFO  web[][o.s.s.p.Platform] WebServer is operational

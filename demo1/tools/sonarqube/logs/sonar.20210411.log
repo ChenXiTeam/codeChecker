@@ -1,0 +1,511 @@
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 13:56:03 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 13:56:03 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:58327]
+2021.04.11 13:56:03 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 13:56:03 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 13:56:12 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 13:56:12 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process11676968569087896684properties
+2021.04.11 13:56:31 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 13:56:31 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process15610777526449217252properties
+2021.04.11 13:56:35 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 13:56:35 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2021.04.11 13:57:17 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2021.04.11 13:57:17 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2021.04.11 13:57:18 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2021.04.11 13:57:18 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2021.04.11 13:57:18 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 13:57:53 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 13:57:53 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:58502]
+2021.04.11 13:57:53 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 13:57:53 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 13:58:01 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 13:58:01 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process6946511523431510325properties
+2021.04.11 13:58:19 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 13:58:19 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process15734776332279020755properties
+2021.04.11 13:58:24 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 13:58:24 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2021.04.11 13:58:38 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2021.04.11 13:58:39 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2021.04.11 13:58:40 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2021.04.11 13:58:40 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2021.04.11 13:58:40 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 13:59:16 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 13:59:16 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:58667]
+2021.04.11 13:59:16 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 13:59:16 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 13:59:24 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 13:59:24 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process962508269683775204properties
+2021.04.11 13:59:42 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 13:59:42 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process15938020779403846876properties
+2021.04.11 13:59:46 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 13:59:46 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 13:59:55 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 13:59:55 ERROR app[][o.s.application.App] Startup failure
+java.nio.file.FileSystemException: F:\python_codes\codeChecker\tools\sonarqube\temp\ce-exploded-plugins\c\META-INF\lib\ant-1.10.4.jar: 另一个程序正在使用此文件，进程无法访问。
+
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:274)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1142)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:192)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:186)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2725)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2797)
+	at org.sonar.process.FileUtils2.deleteDirectoryImpl(FileUtils2.java:148)
+	at org.sonar.process.FileUtils2.deleteDirectory(FileUtils2.java:121)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:117)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:101)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2725)
+	at org.sonar.application.AppFileSystem.createOrCleanTempDirectory(AppFileSystem.java:96)
+	at org.sonar.application.AppFileSystem.reset(AppFileSystem.java:62)
+	at org.sonar.application.App.start(App.java:62)
+	at org.sonar.application.App.main(App.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 14:00:02 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 14:00:02 ERROR app[][o.s.application.App] Startup failure
+java.nio.file.FileSystemException: F:\python_codes\codeChecker\tools\sonarqube\temp\ce-exploded-plugins\c\META-INF\lib\ant-1.10.4.jar: 另一个程序正在使用此文件，进程无法访问。
+
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:274)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1142)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:192)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:186)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2725)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2797)
+	at org.sonar.process.FileUtils2.deleteDirectoryImpl(FileUtils2.java:148)
+	at org.sonar.process.FileUtils2.deleteDirectory(FileUtils2.java:121)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:117)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:101)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2725)
+	at org.sonar.application.AppFileSystem.createOrCleanTempDirectory(AppFileSystem.java:96)
+	at org.sonar.application.AppFileSystem.reset(AppFileSystem.java:62)
+	at org.sonar.application.App.start(App.java:62)
+	at org.sonar.application.App.main(App.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 14:00:20 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 14:00:20 ERROR app[][o.s.application.App] Startup failure
+java.nio.file.FileSystemException: F:\python_codes\codeChecker\tools\sonarqube\temp\ce-exploded-plugins\c\META-INF\lib\ant-1.10.4.jar: 另一个程序正在使用此文件，进程无法访问。
+
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:274)
+	at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+	at java.base/java.nio.file.Files.delete(Files.java:1142)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:192)
+	at org.sonar.process.FileUtils2$DeleteRecursivelyFileVisitor.visitFile(FileUtils2.java:186)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2725)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2797)
+	at org.sonar.process.FileUtils2.deleteDirectoryImpl(FileUtils2.java:148)
+	at org.sonar.process.FileUtils2.deleteDirectory(FileUtils2.java:121)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:117)
+	at org.sonar.application.AppFileSystem$CleanTempDirFileVisitor.visitFile(AppFileSystem.java:101)
+	at java.base/java.nio.file.Files.walkFileTree(Files.java:2725)
+	at org.sonar.application.AppFileSystem.createOrCleanTempDirectory(AppFileSystem.java:96)
+	at org.sonar.application.AppFileSystem.reset(AppFileSystem.java:62)
+	at org.sonar.application.App.start(App.java:62)
+	at org.sonar.application.App.main(App.java:97)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.tanukisoftware.wrapper.WrapperSimpleApp.run(WrapperSimpleApp.java:240)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 14:05:06 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 14:05:06 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:58913]
+2021.04.11 14:05:06 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 14:05:06 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 14:05:14 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 14:05:14 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process6735168442752019382properties
+2021.04.11 14:05:32 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 14:05:32 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process9300382254702559525properties
+2021.04.11 14:05:36 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 14:05:36 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+CTRL-C trapped.  Shutting down.
+2021.04.11 14:07:29 INFO  app[][o.s.a.SchedulerImpl] Stopping SonarQube
+2021.04.11 14:07:29 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2021.04.11 14:07:30 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2021.04.11 14:07:30 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2021.04.11 14:07:30 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+OpenSCManager failed - 拒绝访问。 (0x5)
+The SonarQube service is not installed - 指定的服务未安装。 (0x424)
+The SonarQube service is not installed - 指定的服务未安装。 (0x424)
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 14:32:14 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 14:32:14 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:59867]
+2021.04.11 14:32:14 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 14:32:14 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 14:32:22 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 14:32:22 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process13298840201711182551properties
+2021.04.11 14:32:40 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 14:32:40 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process9906674891016256492properties
+2021.04.11 14:32:44 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 14:32:44 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 14:37:24 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 14:37:24 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:59988]
+2021.04.11 14:37:24 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 14:37:24 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 14:37:32 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 14:37:32 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process3383542382292102860properties
+2021.04.11 14:37:51 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 14:37:51 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process6191885252000396027properties
+2021.04.11 14:37:56 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 14:37:56 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 14:40:46 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 14:40:46 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:60150]
+2021.04.11 14:40:46 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 14:40:46 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 14:40:54 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 14:40:54 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process14062687934819871862properties
+2021.04.11 14:41:13 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 14:41:13 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process1286338190174032757properties
+2021.04.11 14:41:17 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 14:41:17 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 14:45:32 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 14:45:32 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:49760]
+2021.04.11 14:45:32 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 14:45:32 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 14:45:40 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 14:45:40 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process3288057011197890260properties
+2021.04.11 14:46:05 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 14:46:05 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process161663104201223657properties
+2021.04.11 14:46:09 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 14:46:09 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+ERROR: Another instance of the SonarQube application is already running.
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 14:47:34 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 14:47:34 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:49969]
+2021.04.11 14:47:34 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 14:47:34 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 14:47:42 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 14:47:42 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process9749863689749250149properties
+2021.04.11 14:48:02 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 14:48:02 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process9578135478922983480properties
+2021.04.11 14:48:07 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 14:48:07 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:12:30 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:12:30 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:50646]
+2021.04.11 15:12:30 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:12:30 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 15:12:39 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 15:12:39 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process15735442262197791616properties
+2021.04.11 15:12:58 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 15:12:58 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process12449749289794168706properties
+2021.04.11 15:13:02 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 15:13:02 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2021.04.11 15:14:20 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [ce]: 1
+2021.04.11 15:14:20 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2021.04.11 15:14:21 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2021.04.11 15:14:21 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2021.04.11 15:14:21 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:15:32 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:15:32 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:50790]
+2021.04.11 15:15:32 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:15:32 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 15:15:39 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 15:15:39 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process8811159211399311725properties
+2021.04.11 15:15:59 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 15:15:59 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process17566191559335005311properties
+2021.04.11 15:16:03 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 15:16:03 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:22:59 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:22:59 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:50960]
+2021.04.11 15:22:59 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:22:59 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 15:23:07 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 15:23:07 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process15830726048520504298properties
+2021.04.11 15:23:26 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 15:23:26 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process14896838791858649374properties
+2021.04.11 15:23:30 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 15:23:30 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+ERROR: Another instance of the SonarQube application is already running.
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:26:39 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:26:39 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:51129]
+2021.04.11 15:26:39 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:26:39 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 15:26:46 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 15:26:46 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process12986360913464897418properties
+2021.04.11 15:27:04 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 15:27:04 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process4972761782727744238properties
+2021.04.11 15:27:08 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 15:27:08 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:28:48 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:28:48 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:51238]
+2021.04.11 15:28:48 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:28:48 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 15:28:55 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 15:28:55 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process437783050278921492properties
+2021.04.11 15:29:15 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 15:29:15 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process11331271647407905988properties
+2021.04.11 15:29:19 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 15:29:19 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:30:08 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:30:08 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:51362]
+2021.04.11 15:30:08 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:30:08 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 15:30:16 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 15:30:16 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process8603003301180074554properties
+2021.04.11 15:30:35 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 15:30:35 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process3616077101101367966properties
+2021.04.11 15:30:40 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 15:30:40 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2021.04.11 15:31:11 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 1
+2021.04.11 15:31:11 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2021.04.11 15:31:11 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2021.04.11 15:31:12 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2021.04.11 15:31:12 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+ERROR: Another instance of the SonarQube application is already running.
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:31:51 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:31:51 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:51494]
+2021.04.11 15:31:51 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:31:51 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 15:31:59 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 15:31:59 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process12553617392891381191properties
+2021.04.11 15:32:16 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 15:32:16 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process5478413824219539672properties
+2021.04.11 15:32:20 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 15:32:20 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+2021.04.11 15:32:27 WARN  app[][o.s.a.p.AbstractManagedProcess] Process exited with exit value [es]: 1
+2021.04.11 15:32:27 INFO  app[][o.s.a.SchedulerImpl] Process[es] is stopped
+2021.04.11 15:32:28 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is stopped
+2021.04.11 15:32:29 INFO  app[][o.s.a.SchedulerImpl] Process[web] is stopped
+2021.04.11 15:32:29 INFO  app[][o.s.a.SchedulerImpl] SonarQube is stopped
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:33:04 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:33:05 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:51594]
+2021.04.11 15:33:05 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:33:05 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:33:37 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:33:37 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:51615]
+2021.04.11 15:33:37 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:33:37 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+ERROR: Another instance of the SonarQube application is already running.
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:36:51 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:36:51 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:51646]
+2021.04.11 15:36:51 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:36:51 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 15:36:59 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 15:36:59 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process16218103578274695638properties
+2021.04.11 15:37:16 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 15:37:16 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process3684491537695481275properties
+2021.04.11 15:37:20 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 15:37:20 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+ERROR: Another instance of the SonarQube application is already running.
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:38:28 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:38:28 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:51781]
+2021.04.11 15:38:28 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:38:28 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 15:38:35 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 15:38:35 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process5785757588583348820properties
+2021.04.11 15:38:55 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 15:38:55 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process6701239570417960664properties
+2021.04.11 15:38:59 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 15:38:59 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:41:17 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:41:17 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:52010]
+2021.04.11 15:41:17 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:41:17 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 15:41:25 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 15:41:25 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process10998078766740101492properties
+2021.04.11 15:41:44 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 15:41:44 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process8616165915080858421properties
+2021.04.11 15:41:48 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 15:41:48 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+JVM exited unexpectedly.
+JVM Restarts disabled.  Shutting down.
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 15:44:44 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 15:44:44 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:52272]
+2021.04.11 15:44:44 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 15:44:44 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 15:44:52 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 15:44:52 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process9153469511019230472properties
+JVM exited unexpectedly.
+JVM Restarts disabled.  Shutting down.
+<-- Wrapper Stopped
+--> Wrapper Started as Console
+Launching a JVM...
+Wrapper (Version 3.2.3) http://wrapper.tanukisoftware.org
+  Copyright 1999-2006 Tanuki Software, Inc.  All Rights Reserved.
+
+2021.04.11 17:16:29 INFO  app[][o.s.a.AppFileSystem] Cleaning or creating temp directory F:\python_codes\codeChecker\tools\sonarqube\temp
+2021.04.11 17:16:29 INFO  app[][o.s.a.es.EsSettings] Elasticsearch listening on [HTTP: 127.0.0.1:9001, TCP: 127.0.0.1:53710]
+2021.04.11 17:16:29 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='es', ipcIndex=1, logFilenamePrefix=es]] from [F:\python_codes\codeChecker\tools\sonarqube\elasticsearch]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -XX:+UseConcMarkSweepGC -XX:CMSInitiatingOccupancyFraction=75 -XX:+UseCMSInitiatingOccupancyOnly -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:ErrorFile=../logs/es_hs_err_pid%p.log -Des.networkaddress.cache.ttl=60 -Des.networkaddress.cache.negative.ttl=10 -XX:+AlwaysPreTouch -Xss1m -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djna.nosys=true -XX:-OmitStackTraceInFastThrow -Dio.netty.noUnsafe=true -Dio.netty.noKeySetOptimization=true -Dio.netty.recycler.maxCapacityPerThread=0 -Dio.netty.allocator.numDirectArenas=0 -Dlog4j.shutdownHookEnabled=false -Dlog4j2.disable.jmx=true -Djava.locale.providers=COMPAT -Xmx512m -Xms512m -XX:MaxDirectMemorySize=256m -XX:+HeapDumpOnOutOfMemoryError -Delasticsearch -Des.path.home=F:\python_codes\codeChecker\tools\sonarqube\elasticsearch -Des.path.conf=F:\python_codes\codeChecker\tools\sonarqube\temp\conf\es -cp lib/* org.elasticsearch.bootstrap.Elasticsearch
+2021.04.11 17:16:29 INFO  app[][o.s.a.SchedulerImpl] Waiting for Elasticsearch to be up and running
+OpenJDK 64-Bit Server VM warning: Option UseConcMarkSweepGC was deprecated in version 9.0 and will likely be removed in a future release.
+2021.04.11 17:16:37 INFO  app[][o.s.a.SchedulerImpl] Process[es] is up
+2021.04.11 17:16:37 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='web', ipcIndex=2, logFilenamePrefix=web]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.server.app.WebServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process6305521258336712656properties
+2021.04.11 17:16:56 INFO  app[][o.s.a.SchedulerImpl] Process[web] is up
+2021.04.11 17:16:56 INFO  app[][o.s.a.ProcessLauncherImpl] Launch process[[key='ce', ipcIndex=3, logFilenamePrefix=ce]] from [F:\python_codes\codeChecker\tools\sonarqube]: C:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java -Djava.awt.headless=true -Dfile.encoding=UTF-8 -Djava.io.tmpdir=F:\python_codes\codeChecker\tools\sonarqube\temp -XX:-OmitStackTraceInFastThrow --add-opens=java.base/java.util=ALL-UNNAMED -Xmx512m -Xms128m -XX:+HeapDumpOnOutOfMemoryError -Dhttp.nonProxyHosts=localhost|127.*|[::1] -cp ./lib/common/*;F:\python_codes\codeChecker\tools\sonarqube\lib\jdbc\h2\h2-1.4.199.jar org.sonar.ce.app.CeServer F:\python_codes\codeChecker\tools\sonarqube\temp\sq-process7823671935836692666properties
+2021.04.11 17:17:00 INFO  app[][o.s.a.SchedulerImpl] Process[ce] is up
+2021.04.11 17:17:00 INFO  app[][o.s.a.SchedulerImpl] SonarQube is up
+ERROR: Another instance of the SonarQube application is already running.
